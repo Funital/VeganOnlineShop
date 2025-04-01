@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cover"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/middleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="비건 관련 유튜브 추천"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_below="@id/topImage"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/middleText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:divider="@android:color/darker_gray"
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>
